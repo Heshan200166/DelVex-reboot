@@ -19,7 +19,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden w-full">
       <ScrollToTop />
       <Header />
       <main>
@@ -33,7 +33,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppFloat />
-    </>
+    </div>
   );
 }
 
