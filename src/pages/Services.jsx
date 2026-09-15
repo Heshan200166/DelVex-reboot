@@ -6,7 +6,6 @@ const servicesData = [
     id: 'installation',
     title: 'Split AC Installation',
     image: '/images/service-installation.jpg',
-    image2: '/images/service-installation-2.jpg',
     description: 'Our professional split AC installation service ensures your air conditioning system is set up correctly, safely, and efficiently. We handle everything from site assessment to final testing.',
     includes: [
       'Residential AC installation',
@@ -24,7 +23,6 @@ const servicesData = [
     id: 'maintenance',
     title: 'AC Maintenance',
     image: '/images/service-maintenance.jpg',
-    image2: '/images/service-repair-2.webp',
     description: 'Regular maintenance is key to keeping your AC running efficiently and extending its lifespan. Our comprehensive maintenance service covers every component of your system.',
     includes: [
       'Regular servicing and tune-ups',
@@ -42,7 +40,6 @@ const servicesData = [
     id: 'repairs',
     title: 'Breakdown & Repairs',
     image: '/images/service-repair.jpg',
-    image2: '/images/technician-safety.jpg',
     description: 'Experiencing AC problems? Our expert technicians diagnose and fix all types of air conditioner issues quickly and reliably, getting your comfort back on track.',
     includes: [
       'AC not cooling troubleshooting',
@@ -60,7 +57,6 @@ const servicesData = [
     id: 'gas-charging',
     title: 'Gas Charging',
     image: '/images/service-gas.jpg',
-    image2: '/images/service-maintenance.jpg',
     description: 'Proper refrigerant levels are essential for your AC to cool effectively. Our gas charging service includes thorough leak checking and precise gas filling.',
     includes: [
       'Refrigerant gas level checking',
@@ -77,7 +73,6 @@ const servicesData = [
     id: 'design-supply',
     title: 'Design & Supply',
     image: '/images/service-supply.jpg',
-    image2: '/images/ac-wall-unit.jpg',
     description: 'Not sure which AC system is right for your space? We provide expert consultation, recommend the best air conditioning solutions, and supply quality units for your needs.',
     includes: [
       'AC system consultation',
@@ -146,20 +141,13 @@ export default function Services() {
           {activeService && (
             <div key={animKey} className="service-content-enter">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-                {/* Images - 5 cols on lg */}
-                <div className="lg:col-span-5 space-y-4">
-                  <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-slate-100">
+                {/* Showcase Image - 5 cols on lg */}
+                <div className="lg:col-span-5">
+                  <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100 lg:sticky lg:top-24 group">
                     <img
                       src={activeService.image}
                       alt={activeService.title}
-                      className="w-full h-[280px] sm:h-[320px] object-cover"
-                    />
-                  </div>
-                  <div className="rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-100">
-                    <img
-                      src={activeService.image2}
-                      alt={`${activeService.title} - secondary`}
-                      className="w-full h-[180px] sm:h-[200px] object-cover"
+                      className="w-full h-[300px] sm:h-[380px] lg:h-[440px] object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                 </div>

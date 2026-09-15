@@ -146,7 +146,7 @@ export default function Contact() {
                 <p className="text-slate-500 text-xs sm:text-sm mb-5">Stay updated with our latest installation photos, AC tips, and seasonal offers.</p>
                 <div className="space-y-3">
                   <a
-                    href="https://www.facebook.com/DelvexEngineering"
+                    href="https://www.facebook.com/share/14nisH8aAYf/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3.5 p-3.5 rounded-xl bg-slate-50 hover:bg-sky-50 border border-slate-200 hover:border-sky-300 transition-all group"
