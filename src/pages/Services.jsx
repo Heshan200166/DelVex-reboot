@@ -127,7 +127,7 @@ export default function Services() {
 
       {/* Service Tabs + Content */}
       <section className="py-12 md:py-20 bg-white" id="service-details">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           {/* Tab Navigation */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-12" id="service-tabs">
             {servicesData.map((service) => (
@@ -202,7 +202,7 @@ export default function Services() {
 
       {/* CTA Section */}
       <section className="py-14 md:py-18 bg-[#0c2340] text-center text-white border-t border-[#15325b]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="site-container">
           <h2 className="text-2xl sm:text-3xl font-heading font-black text-white mb-3">Need Help Choosing the Right AC?</h2>
           <p className="text-slate-300 text-sm sm:text-base mb-6 max-w-md mx-auto font-light">Our expert team is ready to assist you. Get in touch with us today for a free assessment.</p>
           <div className="flex flex-wrap justify-center gap-3.5">
