@@ -5,13 +5,13 @@ export default function Footer() {
     <footer className="bg-[#0c2340] text-slate-300 border-t border-[#15325b]">
       {/* Main Footer */}
       <div className="site-container py-10 md:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 md:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {/* Column 1: Brand */}
           <div className="space-y-3 sm:space-y-4">
             <Link to="/" className="inline-block bg-white p-2.5 rounded-xl shadow-sm">
               <img src="/images/logo.jpg" alt="Delvex Engineering Logo" className="h-10 md:h-11 w-auto object-contain" />
             </Link>
-            <p className="text-xs md:text-sm leading-relaxed text-slate-300 max-w-sm">
+            <p className="text-xs md:text-sm leading-relaxed text-slate-300">
               Your trusted partner for split-type air conditioner installation, maintenance, repair and gas charging services across Sri Lanka.
             </p>
             <p className="text-sky-300 font-semibold text-xs md:text-sm italic">
@@ -19,20 +19,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
-            <h3 className="text-white font-heading font-bold text-base md:text-lg mb-2">Quick Links</h3>
-            <div className="w-10 h-0.5 bg-sky-400 mb-3 md:mb-4 rounded-full"></div>
-            <nav className="flex flex-wrap sm:flex-col gap-x-5 gap-y-2 text-sm">
-              <Link to="/" className="footer-link">Home</Link>
-              <Link to="/services" className="footer-link">Services</Link>
-              <Link to="/about" className="footer-link">About Us</Link>
-              <Link to="/gallery" className="footer-link">Gallery</Link>
-              <Link to="/contact" className="footer-link">Contact</Link>
-            </nav>
-          </div>
-
-          {/* Column 3: Contact Info */}
+          {/* Column 2: Contact Us */}
           <div>
             <h3 className="text-white font-heading font-bold text-base md:text-lg mb-2">Contact Us</h3>
             <div className="w-10 h-0.5 bg-sky-400 mb-3 md:mb-4 rounded-full"></div>
@@ -66,25 +53,17 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 4: Service Areas & Socials */}
+          {/* Column 3: Service Areas */}
           <div>
             <h3 className="text-white font-heading font-bold text-base md:text-lg mb-2">Service Areas</h3>
             <div className="w-10 h-0.5 bg-sky-400 mb-3 md:mb-4 rounded-full"></div>
-            <div className="flex flex-wrap gap-1.5 sm:gap-2 text-xs text-slate-300 mb-4 sm:mb-5">
+            <div className="flex flex-wrap gap-1.5 sm:gap-2 text-xs text-slate-300">
               {['Colombo', 'Matara', 'Dickwella', 'Tangalle', 'Belihattha'].map((area) => (
                 <div key={area} className="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#15325b]/70 border border-sky-400/20 text-slate-200">
                   <svg className="w-3 h-3 text-sky-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                   <span>{area}</span>
                 </div>
               ))}
-            </div>
-            <div className="flex items-center gap-2.5">
-              <a href="https://www.facebook.com/share/14nisH8aAYf/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-[#15325b] border border-sky-400/20 flex items-center justify-center text-slate-300 hover:bg-sky-500 hover:text-white transition-all shadow-sm" aria-label="Facebook">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-              </a>
-              <a href="https://www.tiktok.com/@delvexengineering" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-[#15325b] border border-sky-400/20 flex items-center justify-center text-slate-300 hover:bg-sky-500 hover:text-white transition-all shadow-sm" aria-label="TikTok">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-              </a>
             </div>
           </div>
         </div>
