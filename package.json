@@ -1,0 +1,23 @@
+{
+  "name": "delvex-engineering",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Delvex Engineering - AC Installation, Service & Maintenance",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heshan200166/DelVex-reboot.git"
+  },
+  "author": "Delvex Engineering",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.3"
+  }
+}
